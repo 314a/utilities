@@ -1,0 +1,34 @@
+h1. Setup Java Project with ANT GIT in Eclipse
+
+# create new java project 
+# organize source code into standard src,test,doc folder
+# write built script (ant)
+# put code into repository (git)
+# ev. integrate code into your CI configuration (det up safety net)
+# write test simulating how you need to use software
+# Add found issues to buck tracker..
+
+h2. Eclipse Project Structure Template
+
+*Project:* Name
+
+* *src* folder sorting project source files
+* *test* folder (right click select in context menu "use as Source Folder")
+* *demo* folder optional to demonstrate the usage of code in the _src_ folder
+* *doc* folder storing java doc
+* *lib* storing the extra libraries
+* *resources* folder storing project resource files
+* *project* storing all project- and building related files
+** *help* storing the help files for the source code eg. written in _.textile_
+** *template* storing application templates for different platforms such as windows or osx
+** *lib* storing libraries and software needed for building and testing
+** *design* storing source images eg. photoshop or illustrator files
+** *wiki* with project related documents and notes
+* _build.xml_ main build file for the project
+* _build.properties_ storing the project specific build variables.
+* *{background-color:#CCC}build* contains all compiled classes, tests and software resources. The folder is built/deleted dynamically by the ant _build.xml_ file.
+* *{background-color:#CCC}dist* contains the final distribution eg. windows, osx executable or installers. The folder is built/deleted dynamically by the ant _build.xml_ file.
+
+*Project Properties:*
+
+* add JUnit in java built path (Libraries - add Library) for testing
