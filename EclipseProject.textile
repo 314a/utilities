@@ -1,14 +1,7 @@
 h1. Setup Java Project with ANT GIT in Eclipse
 
-{toc}
+Notes on how to setup a java project and all the related build tasks in eclipse.
 
-# create new java project 
-# organize source code into standard src,test,doc folder
-# write built script (ant)
-# put code into repository (git)
-# ev. integrate code into your CI configuration (det up safety net)
-# write test simulating how you need to use software
-# Add found issues to buck tracker..
 
 h2. Eclipse Project Structure Template
 
